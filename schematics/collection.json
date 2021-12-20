@@ -1,0 +1,9 @@
+{
+    "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+    "schematics": {
+      "ng-add": {
+        "description": "Add xml pipe to the project.",
+        "factory": "./ng-add/index#ngAdd"
+      }
+    }
+  }

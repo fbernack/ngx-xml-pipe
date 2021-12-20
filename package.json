@@ -1,6 +1,11 @@
 {
   "name": "xml-pipe",
-  "version": "0.0.4",
+  "version": "0.0.5",
+  "scripts": {
+    "build": "tsc -p tsconfig.schematics.json",
+    "postbuild": "copyfiles schematics/*/schema.json schematics/*/files/** schematics/collection.json ../../dist/xml-pipe/"
+  },
+  "schematics": "./schematics/collection.json",
   "peerDependencies": {
     "@angular/common": "^13.1.0",
     "@angular/core": "^13.1.0",
@@ -8,6 +13,10 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "copyfiles": "file:../../node_modules/copyfiles",
+    "typescript": "file:../../node_modules/typescript"
   },
   "keywords": [
     "xml",
@@ -23,5 +32,8 @@
   },
   "bugs": {
     "url": "https://github.com/daFant/xml-pipe/issues"
+  },
+  "ng-add": {
+    "save": "true"
   }
 }
