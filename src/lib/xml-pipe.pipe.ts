@@ -4,7 +4,7 @@ import * as xmlbuilder2 from 'xmlbuilder2';
 @Pipe({ name: 'xml' })
 export class XmlPipe implements PipeTransform {
 
-  transform(value: any, prettyPrint: boolean = true, root: string = ''): string {
+  transform(value: any, prettyPrint: boolean = false, root: string = ''): string {
 
     const doc = xmlbuilder2.create();
     if (root) {
