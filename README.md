@@ -54,8 +54,40 @@ export class AppModule { }
 
  2) Use the `xml` pipe in your template expression.
 
- ```html
-<p>{{ foo | xml }}</p>
+```html
+{{ value | xml : prettyPrint : root }}
+```
+### Arguments
+
+| Param | Type | Default Value | Details |
+| --- | --- | --- | --- |
+| value | `object` |  | The object to be displayed in XML representation. |
+| prettyPrint | `boolean` | false | Whether the XML elements should be indented according to their level. |
+| root | `string` |  | Name of an optional root element to be added. |
+ 
+### Examples
+#### Default usage
+```typescript
+foo = { foo :  'bar' }
+```
+```html
+{{ foo | xml }}
+```
+Result: 
+```xml
+<?xml version="1.0"?><foo>bar</foo>
+```
+#### Additional root element
+Note: If your object has multiple properties at the first level, a root element must be added, otherwise a valid XML document cannot be displayed.
+```typescript
+foo = { name:  "Lisa Simpson", address: { street :  "742 Evergreen Terrace", city:  "Springfield" }}
+```
+```html
+{{{ foo : false : 'character' }}}
+```
+Result: 
+```xml
+<?xml version="1.0"?><character><name>Lisa Simpson</name><adress><street>742 Evergreen Terrace</street><city>Springfield</city></adress></character>
 ```
 
 ## Credits
