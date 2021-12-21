@@ -1,6 +1,6 @@
 /*
- * Public API Surface of xml-pipe
+ * Public API Surface of ngx-xml-pipe
  */
 
-export * from './lib/xml-pipe.module';
-export * from './lib/xml-pipe.pipe';
+export * from './lib/ngx-xml-pipe.module';
+export * from './lib/ngx-xml-pipe.pipe';

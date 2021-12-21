@@ -15,7 +15,7 @@
       "noUnusedParameters": true,
       "noUnusedLocals": true,
       "rootDir": "schematics",
-      "outDir": "../../dist/xml-pipe/schematics",
+      "outDir": "../../dist/ngx-xml-pipe/schematics",
       "skipDefaultLibCheck": true,
       "skipLibCheck": true,
       "sourceMap": true,

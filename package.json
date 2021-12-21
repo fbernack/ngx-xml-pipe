@@ -1,9 +1,9 @@
 {
-  "name": "xml-pipe",
-  "version": "0.0.7",
+  "name": "ngx-xml-pipe",
+  "version": "0.0.8",
   "scripts": {
     "build": "tsc -p tsconfig.schematics.json",
-    "postbuild": "copyfiles schematics/*/schema.json schematics/*/files/** schematics/collection.json ../../dist/xml-pipe/"
+    "postbuild": "copyfiles schematics/*/schema.json schematics/*/files/** schematics/collection.json ../../dist/ngx-xml-pipe/"
   },
   "schematics": "./schematics/collection.json",
   "peerDependencies": {
@@ -25,13 +25,13 @@
   ],
   "author": "Franz Bernack <franz.bernack@cranky.de>",
   "license": "MIT",
-  "homepage": "https://github.com/daFant/xml-pipe",
+  "homepage": "https://github.com/daFant/ngx-xml-pipe",
   "repository": {
     "type": "git",
-    "url": "https://github.com/daFant/xml-pipe.git"
+    "url": "https://github.com/daFant/ngx-xml-pipe.git"
   },
   "bugs": {
-    "url": "https://github.com/daFant/xml-pipe/issues"
+    "url": "https://github.com/daFant/ngx-xml-pipe/issues"
   },
   "ng-add": {
     "save": "true"

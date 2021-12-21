@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import * as xmlbuilder2 from 'xmlbuilder2';
 
 @Pipe({ name: 'xml' })
-export class XmlPipe implements PipeTransform {
+export class NgxXmlPipe implements PipeTransform {
 
   transform(value: any, prettyPrint: boolean = false, root: string = ''): string {
 
