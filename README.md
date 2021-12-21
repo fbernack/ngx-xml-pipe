@@ -13,8 +13,9 @@ Angular Pipe which converts a value into its XML-format representation.
 ### Peer dependency
 
 The package uses the peer dependency [xmlbuilder2](https://github.com/oozcitak/xmlbuilder2), so this must be installed first.
-
-`npm i xmlbuilder2`
+```
+npm i xmlbuilder2
+```
 
 ### Install NgxXmlPipe
 
