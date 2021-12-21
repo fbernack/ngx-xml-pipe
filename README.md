@@ -87,7 +87,7 @@ foo = { name:  "Lisa Simpson", address: { street :  "742 Evergreen Terrace", cit
 ```
 Result: 
 ```xml
-<?xml version="1.0"?><character><name>Lisa Simpson</name><adress><street>742 Evergreen Terrace</street><city>Springfield</city></adress></character>
+<?xml version="1.0"?><character><name>Lisa Simpson</name><address><street>742 Evergreen Terrace</street><city>Springfield</city></address></character>
 ```
 
 ## Credits
